@@ -234,7 +234,7 @@ body {
     }
 
     .header-content h1 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .header-content{
@@ -265,10 +265,10 @@ body {
     }
 
     .video-container {
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-bottom: 5px;
-        margin-top: 5px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
     }
 
     .video-container iframe {
@@ -277,12 +277,12 @@ body {
     }
 
     .kmo-title-pane {
-        font-size: 1rem;
+        font-size:0.8rem;
     }
 
 
     .program-event-title-text {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .program-event-text {
         font-size: 0.6rem;
@@ -305,7 +305,6 @@ body {
         padding: 1rem;
         font-size: 1.2rem;
     }
-
 
     .kmo-subtitle {
         font-size: 1rem;
@@ -446,7 +445,7 @@ body {
     font-weight: 600;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .video-container iframe {
         height: 300px;
     }
@@ -455,7 +454,7 @@ body {
         width: 100%;
         max-width: 300px;
     }
-}
+}*/
 
 /*Видео Обращение*/
 
