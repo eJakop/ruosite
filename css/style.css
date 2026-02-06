@@ -229,10 +229,11 @@ body {
   .app-header {
     flex-direction: column;
     text-align: center;
+    
   }
   
   .header-content h1 {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
   
   .cta-buttons {
