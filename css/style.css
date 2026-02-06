@@ -265,20 +265,22 @@ body {
     }
 
     .video-container {
-        padding-left: 0px;
-        padding-right: 0px;
-        margin-bottom: 0px;
-        margin-top: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .video-container iframe {
+        height: 250px;
+        width: 100%;
     }
 
     .kmo-title-pane {
         font-size: 1rem;
     }
 
-    .kmo-pane {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
+
     .program-event-title-text {
         font-size: 1rem;
     }
@@ -292,6 +294,22 @@ body {
         padding: 0.6rem;
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    .kmo-pane {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .kmo-card {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+
+    .kmo-subtitle {
+        font-size: 1rem;
+        margin-bottom: 0rem;
     }
 
 }
@@ -371,7 +389,6 @@ body {
     height: 450px;
     width: 100%;
     border: none;
-    margin-bottom: 25px;
     transition: opacity 0.3s ease;
 }
 
@@ -458,7 +475,7 @@ body {
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     margin-bottom: 2rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .kmo-section {
@@ -469,13 +486,14 @@ body {
 }
 
 .kmo-card {
-    text-size-adjust:auto;
     background: white;
     padding: 1rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     text-align: center;
     transition: var(--transition);
+    font-size: 1.2rem;
+    font-weight:bold;
 }
 
 
@@ -483,6 +501,7 @@ body {
     font-size: 1rem;
     color: #666;
     margin-bottom: 1rem;
+    font-weight: normal;
 }
 
 .line-top {
