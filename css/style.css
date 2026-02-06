@@ -265,16 +265,12 @@ body {
     }
 
     .video-container {
-        padding-left: 0px;
-        padding-right: 0px;
-        margin-bottom: 0px;
-        margin-top: 0px;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
-    .video-container iframe {
-        height: 250px;
-        width: 100%;
-    }
+
+
 
     .kmo-title-pane {
         font-size:0.8rem;
@@ -282,28 +278,28 @@ body {
 
 
     .program-event-title-text {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
     .program-event-text {
-        font-size: 0.6rem;
+        font-size: 0.4rem;
     }
     .program-event-pane-columns {
         padding-left:0px;
     }
     .program-event-pane {
-        padding: 0.6rem;
+        padding: 0.4rem;
         margin-left: 0px;
         margin-right: 0px;
     }
 
     .kmo-pane {
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
 
     .kmo-card {
-        padding: 1rem;
-        font-size: 1.2rem;
+        padding: 0rem;
+        font-size: 1rem;
     }
 
     .kmo-subtitle {
@@ -381,21 +377,6 @@ body {
   animation: slideDown 0.3s ease-out;
 }
 
-/*Видео-контент*/
-.video-container iframe {
-    
-    display: flex;
-    height: 450px;
-    width: 100%;
-    border: none;
-    transition: opacity 0.3s ease;
-}
-
-.video-container.hidden iframe {
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-}
 
 .controls {
     display: flex;
@@ -464,6 +445,17 @@ body {
     padding-right: 6rem;
     margin-bottom: 2rem;
     margin-top:2rem;
+}
+
+.video-container iframe {
+    aspect-ratio: 16 / 9;
+    transition: opacity 0.3s ease;
+}
+
+.video-container.hidden iframe {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
 }
 
 
