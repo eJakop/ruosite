@@ -264,7 +264,7 @@ body {
 
     .program-event-pane-columns {
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 5px;
         padding-left: 0;
         padding-right: 0;
     }
@@ -394,11 +394,10 @@ body {
 @media (max-width: 480px) {
     .program-event-pane-columns {
         grid-template-columns: 1fr 5fr 2fr;
-       
     }
 
     .program-event-text.time {
-        align-self: flex-start;
+        
         font-size: 0.85rem;
     }
 
@@ -668,7 +667,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr; /* первая колонка в 2 раза уже второй */
     gap: 30px;
-    padding-left: 40px;
 }
 
 /*.program-event-pane-columns > p {
