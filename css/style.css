@@ -281,34 +281,51 @@ body {
     }
 
 
-    .program-event-title-text {
-        font-size: 0.4rem;
+    .program-event-place-text {
+        margin-left: 1rem; /* Уменьшаем отступ слева */
+        font-size: 1rem;
     }
+
+    .program-event-text.title {
+        font-size: 1rem; /* Уменьшаем размер шрифта */
+        margin-bottom: 5px;
+    }
+    .program-event-text.time {
+        font-weight: bold;
+        color: var(--primary-color); /* Делаем время более заметным */
+        margin-bottom: 5px;
+    }
+
     .program-event-text {
         font-size: 0.2rem;
     }
 
 
     .program-event-pane {
-        margin-left: 0px;
-        margin-right: 0px;
-        padding: 2px;
-        gap: 0rem;
+        padding: 10px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .program-event-pane-columns {
-        padding-left: 0px;
-        gap: 0rem;
+        grid-template-columns: 1fr; /* Изменяем на одну колонку */
+        gap: 10px; /* Уменьшаем расстояние между элементами */
+        padding-left: 10px; /* Уменьшаем отступ слева */
+        padding-right: 10px; /* Добавляем отступ справа */
     }
 
     .program-event-pane-columns-in-kmo {
-        padding-left: 0px;
-        gap: 0rem;
+        grid-template-columns: 1fr; /* Изменяем на одну колонку */
+        gap: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .program-event-pane-columns-in-kmo-4 {
-        padding-left: 0px;
-        gap: 0rem;
+        grid-template-columns: 1fr; /* Изменяем на одну колонку */
+        gap: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .kmo-pane {
@@ -331,6 +348,12 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 2rem;
         margin-bottom: 2rem;
+    }
+
+    .program-event-date-pane {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px;
     }
 }
 
@@ -587,6 +610,12 @@ body {
     grid-template-columns: 1fr 2.5fr 2.5fr 2fr; /* первая колонка в 2 раза уже второй */
     gap: 30px;
     padding-left: 40px;
+}
+
+.program-event-pane-columns > *:not(:last-child) {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 
