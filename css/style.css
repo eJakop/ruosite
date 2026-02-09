@@ -269,6 +269,7 @@ body {
         padding-right: 0;
     }
 
+
     .program-event-text.time {
         background: #f0f0f0;
         padding: 5px 10px;
@@ -284,11 +285,11 @@ body {
         margin-bottom: 10px;
     }
 
-        .program-event-text.title {
-            font-size: 1rem;
-            margin-bottom: 10px;
-            text-align: center;
-        }
+    .program-event-text.title {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        text-align: center;
+    }
 
     .program-event-place-text {
         margin-left: 0;
@@ -392,8 +393,8 @@ body {
 /* Дополнительные улучшения для очень маленьких экранов */
 @media (max-width: 480px) {
     .program-event-pane-columns {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr 5fr 2fr;
+       
     }
 
     .program-event-text.time {
@@ -670,11 +671,11 @@ body {
     padding-left: 40px;
 }
 
-.program-event-pane-columns > p {
+/*.program-event-pane-columns > p {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-}
+}*/
 
 .kmo-card .cta-buttons {
     margin-top: 10px;
