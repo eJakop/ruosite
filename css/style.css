@@ -287,15 +287,27 @@ body {
     .program-event-text {
         font-size: 0.2rem;
     }
-    .program-event-pane-columns {
-        padding-left:0px;
-    }
 
 
     .program-event-pane {
-        padding: 0.2rem;
         margin-left: 0px;
         margin-right: 0px;
+        padding: 2px;
+    }
+
+    .program-event-pane-columns {
+        gap: 20px;
+        padding-left: 0px;
+    }
+
+    .program-event-pane-columns-in-kmo {
+        gap: 20px;
+        padding-left: 0px;
+    }
+
+    .program-event-pane-columns-in-kmo-4 {
+        gap: 20px;
+        padding-left: 0px;
     }
 
     .kmo-pane {
@@ -319,7 +331,6 @@ body {
         gap: 2rem;
         margin-bottom: 2rem;
     }
-
 }
 
 /* Анимации */
