@@ -226,7 +226,7 @@ body {
 }
 
 /* Адаптивность */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .app-header {
         flex-direction: column;
         text-align: center;
@@ -296,17 +296,17 @@ body {
     }
 
     .program-event-pane-columns {
-        gap: 20px;
+
         padding-left: 0px;
     }
 
     .program-event-pane-columns-in-kmo {
-        gap: 20px;
+
         padding-left: 0px;
     }
 
     .program-event-pane-columns-in-kmo-4 {
-        gap: 20px;
+
         padding-left: 0px;
     }
 
