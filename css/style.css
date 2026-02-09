@@ -276,6 +276,10 @@ body {
         font-size:0.6rem;
     }
 
+    .program-event-place{
+
+    }
+
 
     .program-event-title-text {
         font-size: 0.4rem;
@@ -286,6 +290,8 @@ body {
     .program-event-pane-columns {
         padding-left:0px;
     }
+
+
     .program-event-pane {
         padding: 0.2rem;
         margin-left: 0px;
@@ -544,8 +550,6 @@ body {
 
 .program-event-pane {
     padding: 1rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
     background: white;
     border-radius: var(--border-radius);
     margin-bottom: 2rem;
@@ -558,6 +562,21 @@ body {
     gap: 30px;
     padding-left: 40px;
 }
+
+.program-event-pane-columns-in-kmo {
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr; /* первая колонка в 2 раза уже второй */
+    gap: 30px;
+    padding-left: 40px;
+}
+
+.program-event-pane-columns-in-kmo-4 {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 2.5fr 2fr; /* первая колонка в 2 раза уже второй */
+    gap: 30px;
+    padding-left: 40px;
+}
+
 
 .program-event-text {
     display: block;
@@ -578,7 +597,7 @@ body {
 }
 
 .program-event-date-pane {
-    padding: 1rem;
+    padding: 0rem;
     background: white;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
@@ -586,6 +605,11 @@ body {
     border: 2px solid var(--primary-color);
 }
 
+
+.program-event-place-text {
+    margin-left: 3rem;
+    font-size: 1.2rem;
+}
 .program-event-date-text {
     display: block;
     font-size: 1.3rem;
