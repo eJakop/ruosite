@@ -228,133 +228,205 @@ body {
 /* Адаптивность */
 @media (max-width: 768px) {
     .app-header {
-        flex-direction: column;
+        display: block;
+        padding: 1rem;
         text-align: center;
-        padding: 0.5rem;
+    }
+
+    .header-logo img {
+        max-width: 100px;
+        margin: 0 auto 1rem;
+        display: block;
     }
 
     .header-content h1 {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.3;
+        margin-bottom: 0.5rem;
     }
 
-    .header-content{
-        font-size: 0.8rem;
+    .header-content p {
+        font-size: 0.9rem;
     }
 
-
-  
-    .cta-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-  
-    .btn {
-        width: 100%;
-        max-width: 300px;
-        margin-bottom: 1rem;
-    }
-  
-    .features-section {
-        grid-template-columns: 1fr;
-    }
-  
-    .stats-grid {
-        grid-template-columns: 1fr;
+    /* Убираем лишние отступы */
+    .app-container {
+        padding: 0 10px;
     }
 
-    .video-container {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .video-content-text {
-        font-size: 0.5rem;
-    }
-
-
-    .kmo-title-pane {
-        font-size:0.6rem;
-    }
-
-    .program-event-place{
-
-    }
-
-
-    .program-event-place-text {
-        margin-left: 1rem; /* Уменьшаем отступ слева */
-        font-size: 1rem;
-    }
-
-    .program-event-text.title {
-        font-size: 1rem; /* Уменьшаем размер шрифта */
-        margin-bottom: 5px;
-    }
-    .program-event-text.time {
-        font-weight: bold;
-        color: var(--primary-color); /* Делаем время более заметным */
-        margin-bottom: 5px;
-    }
-
-    .program-event-text {
-        font-size: 0.2rem;
-    }
-
-
+    /* Программа - исправляем отступы и структуру */
     .program-event-pane {
         padding: 10px;
         margin-left: 0;
         margin-right: 0;
+        overflow-x: hidden;
     }
 
     .program-event-pane-columns {
-        grid-template-columns: 1fr; /* Изменяем на одну колонку */
-        gap: 10px; /* Уменьшаем расстояние между элементами */
-        padding-left: 10px; /* Уменьшаем отступ слева */
-        padding-right: 10px; /* Добавляем отступ справа */
-    }
-
-    .program-event-pane-columns-in-kmo {
-        grid-template-columns: 1fr; /* Изменяем на одну колонку */
+        grid-template-columns: 1fr;
         gap: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
-    .program-event-pane-columns-in-kmo-4 {
-        grid-template-columns: 1fr; /* Изменяем на одну колонку */
-        gap: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
+    .program-event-text.time {
+        background: #f0f0f0;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        display: inline-block;
+        font-size: 0.9rem;
     }
 
+    .program-event-text {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+        .program-event-text.title {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+    .program-event-place-text {
+        margin-left: 0;
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    /* KMO секция */
     .kmo-pane {
-        margin-left: 0rem;
-        margin-right: 0rem;
-    }
-
-    .kmo-card {
-        padding: 0rem;
-        font-size: 0.6rem;
-    }
-
-    .kmo-subtitle {
-        font-size: 1rem;
-        margin-bottom: 0rem;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .kmo-section {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 2rem;
-        margin-bottom: 2rem;
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 
+    .kmo-card {
+        padding: 15px;
+        margin: 0 5px;
+        font-size: 1rem;
+    }
+
+    .kmo-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+    }
+
+    /* Видео секция */
+    .video-container {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 1rem 0;
+    }
+
+    .video-content-text {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .video-section {
+        padding: 1rem 0.5rem;
+    }
+
+    /* Основные кнопки */
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+    }
+
+    /* Даты событий */
     .program-event-date-pane {
         margin-left: 0;
         margin-right: 0;
+        padding: 15px 10px;
+        border-width: 1px;
+    }
+
+    .program-event-date-text {
+        font-size: 1rem;
+        padding: 0 10px;
+        line-height: 1.4;
+    }
+
+    /* Герой-секция */
+    .hero-section {
+        padding: 1.5rem 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+        .hero-section h2 {
+            font-size: 1.5rem;
+        }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    /* Линии */
+    .line-top {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    /* Уменьшаем общие отступы */
+    .main-content {
+        padding: 1rem 0;
+    }
+}
+
+/* Дополнительные улучшения для очень маленьких экранов */
+@media (max-width: 480px) {
+    .program-event-pane-columns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .program-event-text.time {
+        align-self: flex-start;
+        font-size: 0.85rem;
+    }
+
+    .header-content h1 {
+        font-size: 1.1rem;
+    }
+
+    .kmo-card {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .kmo-title-pane {
+        font-size: 1rem;
         padding: 10px;
     }
+
+    .program-event-date-text p {
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+    }
+}
+
+.program-event-text,
+.kmo-card p,
+.header-content h1 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 /* Анимации */
@@ -598,6 +670,20 @@ body {
     padding-left: 40px;
 }
 
+.program-event-pane-columns > p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.kmo-card .cta-buttons {
+    margin-top: 10px;
+}
+
+.kmo-card .btn {
+    margin: 5px 0;
+}
+
 .program-event-pane-columns-in-kmo {
     display: grid;
     grid-template-columns: 1fr 5fr 2fr; /* первая колонка в 2 раза уже второй */
@@ -670,3 +756,4 @@ body {
 html {
     scroll-behavior: smooth; /* Включаем плавный скролл для всей страницы */
 }
+
