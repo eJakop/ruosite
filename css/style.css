@@ -265,20 +265,30 @@ body {
     .program-event-pane-columns {
         grid-template-columns: 1fr;
         gap: 5px;
-        padding-left: 0;
+        padding-left: 0; /* ? ЭТО ВАЖНО */
         padding-right: 0;
     }
 
-
-    .program-event-text.time {
-        background: #f0f0f0;
-        padding: 5px 10px;
-        border-radius: 5px;
-        margin-bottom: 5px;
-        display: inline-block;
-        font-size: 0.9rem;
+    .program-event-pane-columns-in-kmo {
+        padding-left: 0; /* ? ЭТО ВАЖНО */
+    }
+    .program-event-pane-columns-in-kmo-4 {
+        padding-left: 0; /* ? ЭТО ВАЖНО */
     }
 
+        .program-event-pane-columns > * {
+            padding: 5px;
+        }
+
+
+
+    .program-event-text.time {
+        font-size: 0.8rem;
+        font-weight: bold;
+        background: none;
+        padding: 0;
+        text-align: left;
+    }
     .program-event-text {
         font-size: 0.9rem;
         line-height: 1.4;
@@ -355,7 +365,6 @@ body {
         margin-left: 0;
         margin-right: 0;
         padding: 15px 10px;
-        border-width: 1px;
     }
 
     .program-event-date-text {
@@ -393,7 +402,9 @@ body {
 /* Дополнительные улучшения для очень маленьких экранов */
 @media (max-width: 480px) {
     .program-event-pane-columns {
-        grid-template-columns: 1fr 5fr 2fr;
+        grid-template-columns: 1fr; /* ? Изменяем на одну колонку */
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .program-event-text.time {
