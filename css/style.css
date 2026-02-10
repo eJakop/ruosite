@@ -272,13 +272,14 @@ body {
     .program-event-pane-columns-in-kmo {
         padding-left: 0; /* ? ЭТО ВАЖНО */
     }
+
     .program-event-pane-columns-in-kmo-4 {
         padding-left: 0; /* ? ЭТО ВАЖНО */
     }
 
-        .program-event-pane-columns > * {
-            padding: 5px;
-        }
+    .program-event-pane-columns > * {
+        padding: 5px;
+    }
 
 
 
@@ -695,19 +696,14 @@ body {
 }
 
 .program-event-pane-columns-in-kmo {
-    display: grid;
-    grid-template-columns: 1fr 5fr 2fr; /* первая колонка в 2 раза уже второй */
-    gap: 30px;
-    padding-left: 40px;
+    padding-left: 0 !important; /* Принудительно убираем отступ */
+    margin-left: 0;
 }
 
 .program-event-pane-columns-in-kmo-4 {
-    display: grid;
-    grid-template-columns: 1fr 2.5fr 2.5fr 2fr; /* первая колонка в 2 раза уже второй */
-    gap: 30px;
-    padding-left: 40px;
+    padding-left: 0 !important; /* Принудительно убираем отступ */
+    margin-left: 0;
 }
-
 .program-event-pane-columns > *:not(:last-child) {
     border-bottom: 1px solid #eee;
     padding-bottom: 10px;
