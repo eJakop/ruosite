@@ -1,4 +1,4 @@
-/* Основные стили */
+п»ї/* РћСЃРЅРѕРІРЅС‹Рµ СЃС‚РёР»Рё */
 :root {
   --primary-color: #2c3e50;
   --secondary-color: #3498db;
@@ -31,14 +31,14 @@ body {
   padding: 0 20px;
 }
 
-/* Шапка */
+/* РЁР°РїРєР° */
 .app-header {
     background: linear-gradient(135deg, var(--primary-color), #1a252f);
     color: white;
     padding: 1.5rem;
     border-radius: 0 0 var(--border-radius) var(--border-radius);
     box-shadow: var(--shadow);
-    grid-template-columns: 1fr 4fr; /* первая колонка в 2 раза уже второй */
+    grid-template-columns: 1fr 4fr; /* РїРµСЂРІР°СЏ РєРѕР»РѕРЅРєР° РІ 2 СЂР°Р·Р° СѓР¶Рµ РІС‚РѕСЂРѕР№ */
     display: grid;
     margin-bottom: 2rem;
     align-items: center;
@@ -57,7 +57,7 @@ body {
   margin-left: 1rem;
 }
 
-/* Кнопки */
+/* РљРЅРѕРїРєРё */
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -101,7 +101,7 @@ body {
   background: #c0392b;
 }
 
-/* Основной контент */
+/* РћСЃРЅРѕРІРЅРѕР№ РєРѕРЅС‚РµРЅС‚ */
 .main-content {
   padding: 2rem 0;
 }
@@ -134,7 +134,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* Карточки особенностей */
+/* РљР°СЂС‚РѕС‡РєРё РѕСЃРѕР±РµРЅРЅРѕСЃС‚РµР№ */
 .features-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -166,7 +166,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Статистика */
+/* РЎС‚Р°С‚РёСЃС‚РёРєР° */
 .quick-stats {
   background: linear-gradient(135deg, var(--secondary-color), #2c3e50);
   color: white;
@@ -193,7 +193,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* Футер */
+/* Р¤СѓС‚РµСЂ */
 .app-footer {
   background: var(--primary-color);
   color: white;
@@ -225,7 +225,7 @@ body {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* Адаптивность */
+/* РђРґР°РїС‚РёРІРЅРѕСЃС‚СЊ */
 @media (max-width: 768px) {
     .app-header {
         display: block;
@@ -249,12 +249,12 @@ body {
         font-size: 0.9rem;
     }
 
-    /* Убираем лишние отступы */
+    /* РЈР±РёСЂР°РµРј Р»РёС€РЅРёРµ РѕС‚СЃС‚СѓРїС‹ */
     .app-container {
         padding: 0 10px;
     }
 
-    /* Программа - исправляем отступы и структуру */
+    /* РџСЂРѕРіСЂР°РјРјР° - РёСЃРїСЂР°РІР»СЏРµРј РѕС‚СЃС‚СѓРїС‹ Рё СЃС‚СЂСѓРєС‚СѓСЂСѓ */
     .program-event-pane {
         padding: 10px;
         margin-left: 0;
@@ -265,16 +265,28 @@ body {
     .program-event-pane-columns {
         grid-template-columns: 1fr;
         gap: 5px;
-        padding-left: 0; /* ? ЭТО ВАЖНО */
+        padding-left: 0; /* в†ђ Р­РўРћ Р’РђР–РќРћ */
         padding-right: 0;
     }
 
     .program-event-pane-columns-in-kmo {
-        padding-left: 0; /* ? ЭТО ВАЖНО */
+        grid-template-columns: 1fr;
+        gap: 5px;
+        padding-left: 0; /* в†ђ Р­РўРћ Р’РђР–РќРћ */
+        padding-right: 0; /* в†ђ Р­РўРћ Р’РђР–РќРћ */
     }
 
     .program-event-pane-columns-in-kmo-4 {
-        padding-left: 0; /* ? ЭТО ВАЖНО */
+        grid-template-columns: 1fr;
+        gap: 5px;
+        padding-left: 0; /* в†ђ Р­РўРћ Р’РђР–РќРћ */
+        padding-right: 0; /* в†ђ Р­РўРћ Р’РђР–РќРћ */
+    }
+        .program-event-pane-columns-in-kmo-4 > * {
+            padding: 5px;
+        }
+    .program-event-pane-columns-in-kmo > * {
+        padding: 5px;
     }
 
     .program-event-pane-columns > * {
@@ -308,7 +320,7 @@ body {
         padding: 0 10px;
     }
 
-    /* KMO секция */
+    /* KMO СЃРµРєС†РёСЏ */
     .kmo-pane {
         margin-left: 0;
         margin-right: 0;
@@ -330,7 +342,7 @@ body {
         margin-bottom: 5px;
     }
 
-    /* Видео секция */
+    /* Р’РёРґРµРѕ СЃРµРєС†РёСЏ */
     .video-container {
         padding-left: 0;
         padding-right: 0;
@@ -346,7 +358,7 @@ body {
         padding: 1rem 0.5rem;
     }
 
-    /* Основные кнопки */
+    /* РћСЃРЅРѕРІРЅС‹Рµ РєРЅРѕРїРєРё */
     .cta-buttons {
         flex-direction: column;
         gap: 10px;
@@ -361,7 +373,7 @@ body {
         margin-bottom: 5px;
     }
 
-    /* Даты событий */
+    /* Р”Р°С‚С‹ СЃРѕР±С‹С‚РёР№ */
     .program-event-date-pane {
         margin-left: 0;
         margin-right: 0;
@@ -374,7 +386,7 @@ body {
         line-height: 1.4;
     }
 
-    /* Герой-секция */
+    /* Р“РµСЂРѕР№-СЃРµРєС†РёСЏ */
     .hero-section {
         padding: 1.5rem 0.5rem;
         margin-bottom: 1rem;
@@ -388,22 +400,34 @@ body {
         font-size: 1rem;
     }
 
-    /* Линии */
+    /* Р›РёРЅРёРё */
     .line-top {
         margin-left: 1rem;
         margin-right: 1rem;
     }
 
-    /* Уменьшаем общие отступы */
+    /* РЈРјРµРЅСЊС€Р°РµРј РѕР±С‰РёРµ РѕС‚СЃС‚СѓРїС‹ */
     .main-content {
         padding: 1rem 0;
     }
 }
 
-/* Дополнительные улучшения для очень маленьких экранов */
+/* Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ СѓР»СѓС‡С€РµРЅРёСЏ РґР»СЏ РѕС‡РµРЅСЊ РјР°Р»РµРЅСЊРєРёС… СЌРєСЂР°РЅРѕРІ */
 @media (max-width: 480px) {
     .program-event-pane-columns {
-        grid-template-columns: 1fr; /* ? Изменяем на одну колонку */
+        grid-template-columns: 1fr; /* в†ђ РР·РјРµРЅСЏРµРј РЅР° РѕРґРЅСѓ РєРѕР»РѕРЅРєСѓ */
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .program-event-pane-columns-in-kmo {
+        grid-template-columns: 1fr; /* в†ђ РР·РјРµРЅСЏРµРј РЅР° РѕРґРЅСѓ РєРѕР»РѕРЅРєСѓ */
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .program-event-pane-columns-in-kmo-4 {
+        grid-template-columns: 1fr; /* в†ђ РР·РјРµРЅСЏРµРј РЅР° РѕРґРЅСѓ РєРѕР»РѕРЅРєСѓ */
         padding-left: 0;
         padding-right: 0;
     }
@@ -441,7 +465,7 @@ body {
     hyphens: auto;
 }
 
-/* Анимации */
+/* РђРЅРёРјР°С†РёРё */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -473,7 +497,7 @@ body {
   animation: pulse 2s infinite;
 }
 
-/* Состояния офлайн */
+/* РЎРѕСЃС‚РѕСЏРЅРёСЏ РѕС„Р»Р°Р№РЅ */
 .offline-warning {
   position: fixed;
   top: 0;
@@ -569,7 +593,7 @@ body {
     }
 }*/
 
-/*Видео Обращение*/
+/*Р’РёРґРµРѕ РћР±СЂР°С‰РµРЅРёРµ*/
 
 .video-section {
     text-align: center;
@@ -675,11 +699,7 @@ body {
 }
 
 
-.program-event-pane-columns {
-    display: grid;
-    grid-template-columns: 1fr 5fr; /* первая колонка в 2 раза уже второй */
-    gap: 30px;
-}
+
 
 /*.program-event-pane-columns > p {
     display: flex;
@@ -695,15 +715,26 @@ body {
     margin: 5px 0;
 }
 
+.program-event-pane-columns {
+    display: grid;
+    grid-template-columns: 1fr 5fr; /* РїРµСЂРІР°СЏ РєРѕР»РѕРЅРєР° РІ 2 СЂР°Р·Р° СѓР¶Рµ РІС‚РѕСЂРѕР№ */
+    gap: 30px;
+}
+
 .program-event-pane-columns-in-kmo {
-    padding-left: 0 !important; /* Принудительно убираем отступ */
-    margin-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr; /* РїРµСЂРІР°СЏ РєРѕР»РѕРЅРєР° РІ 2 СЂР°Р·Р° СѓР¶Рµ РІС‚РѕСЂРѕР№ */
+    gap: 30px;
+    padding-left: 40px;
 }
 
 .program-event-pane-columns-in-kmo-4 {
-    padding-left: 0 !important; /* Принудительно убираем отступ */
-    margin-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 2.5fr 2fr; /* РїРµСЂРІР°СЏ РєРѕР»РѕРЅРєР° РІ 2 СЂР°Р·Р° СѓР¶Рµ РІС‚РѕСЂРѕР№ */
+    gap: 30px;
+    padding-left: 40px;
 }
+
 .program-event-pane-columns > *:not(:last-child) {
     border-bottom: 1px solid #eee;
     padding-bottom: 10px;
@@ -760,6 +791,6 @@ body {
 }
 
 html {
-    scroll-behavior: smooth; /* Включаем плавный скролл для всей страницы */
+    scroll-behavior: smooth; /* Р’РєР»СЋС‡Р°РµРј РїР»Р°РІРЅС‹Р№ СЃРєСЂРѕР»Р» РґР»СЏ РІСЃРµР№ СЃС‚СЂР°РЅРёС†С‹ */
 }
 
